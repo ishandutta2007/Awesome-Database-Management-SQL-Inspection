@@ -15,30 +15,26 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-products)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The global database management tools and administration software sector is estimated at **$7.5B–$7.8B** (within the broader **$148B+** DBMS ecosystem) and is expanding at a 5%–7% CAGR driven by cloud database migration, multi-cloud setups, and AI-assisted SQL workflows. The sector is **moderately to highly fragmented** rather than winner-take-all: traditional monoliths (Oracle, Microsoft) anchor legacy enterprise estates, cloud hyperscalers handle managed operational infrastructure, while specialized IDEs, open-core clients, and developer-focused Postgres platforms compete vigorously across distinct niches.
+
 ## SaaS/Hosted Platforms
 
-- **[DataGrip](https://www.jetbrains.com/datagrip/)**  
-  **JetBrains' database IDE with schema-aware SQL completion and refactoring.** **Free for non-commercial use** (announced October 2025); commercial subscriptions start around **$9.90–$12/month** [citation:1][citation:6][citation:15]. **Built-in MCP server since 2025.2** for AI agent integration [citation:8]. Best for developers already in the JetBrains ecosystem who write SQL as a primary part of their job [citation:15].
-
-- **[TablePlus](https://tableplus.com/)**  
-  **Native, fast database GUI for macOS, Windows, Linux, and iOS.** **Basic: $99 one-time** for one device with one year of updates; trial limited to **2 tabs, 2 windows, and 2 advanced filters** [citation:1]. Best for teams wanting a polished native app without a subscription.
-
-- **[Beekeeper Studio (Paid)**](https://www.beekeeperstudio.io/)**  
-  **Modern cross-platform SQL editor with a free Community Edition.** **Indie: $9/month; Professional: $14/month** (billed yearly) [citation:1][citation:2]. Community Edition is free for individuals, non-profits, and companies with **fewer than 10 employees or under $1M revenue** [citation:8]. Best for teams wanting a clean UI with a generous free tier for small organizations.
-
-- **[Navicat Cloud](https://navicatcloud.com/)**  
-  **Cloud sync add-on for Navicat desktop clients.** **Pro Plan: $9.99/month or $99/year**; redeem code (never expires) at **$1,299** [citation:7][citation:14]. **Note**: requires a separate Navicat desktop license—Cloud alone does not manage databases [citation:7].
-
-- **[Supabase Studio](https://supabase.com/)**  
-  **Managed Postgres with a built-in Studio UI for tables and SQL.** **Free tier: 500 MB database, project pauses after 7 days of inactivity**; Pro: **$25/month** (8 GB database, includes auth, storage, realtime) [citation:4]. Full backend-as-a-service, not just a client. Best for teams wanting an integrated platform rather than a standalone SQL editor.
-
-- **[Neon Console](https://neon.com/)**  
-  **Serverless Postgres with instant branching and a SQL editor.** **Free tier: 0.5 GB storage, unlimited projects, scales to zero**; Pro: **$19/month** (10 GB storage, 300 compute hours) [citation:4]. **Acquired by Databricks** (2025, ~$1B); continues as independent product [citation:11]. Best for serverless/edge stacks needing database branching for CI preview environments.
+| Product | Company Scale (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier Limits / Evaluation | Key Features & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Supabase Studio](https://supabase.com/)** | **~$5.1B Valuation** (~$101M ARR / Series E) | **$25/month** (Pro plan, per project) | **Free Forever**: 500 MB database, 1 GB file storage, 50,000 MAU; pauses after 7 days inactivity | Full managed Postgres backend-as-a-service with built-in table editor, SQL runner, auth, and realtime. |
+| **[Neon Console](https://neon.com/)** | **~$1.0B Valuation** (Acquired by Databricks) | **$19/month** (Launch/Pro plan) | **Free Forever**: 0.5 GB storage, 1 project, 10 branches, 100 compute hours/month, scales to zero | Serverless Postgres platform featuring instant database branching, point-in-time restore, and web SQL console. |
+| **[DataGrip](https://www.jetbrains.com/datagrip/)** | **~$700M+ Revenue** (~16.0B CZK annual revenue; bootstrapped) | **$9.90/month** (individual, billed annually at $99/yr) or **$12/month** (monthly) | **Free for non-commercial use** (full features); **30-day free trial** for commercial evaluation | Heavyweight desktop database IDE with schema-aware completion, refactoring, and built-in AI/MCP support. |
+| **[TablePlus](https://tableplus.com/)** | **~$5M–$10M ARR** (Bootstrapped indie business) | **$99 one-time** (Basic, 1 device, 1 year updates) | **Free Forever (Usage-Capped)**: Max 2 open tabs, 2 active workspace windows, and 2 advanced filters | Ultra-fast native GUI client for macOS, Windows, Linux, and iOS with multi-tab browsing and inline editing. |
+| **[Navicat Cloud](https://navicatcloud.com/)** | **Profitable SMB** (PremiumSoft CyberTech, >180k customers) | **$9.99/month** or **$99/year** (Pro plan) | **Free Forever (Basic Plan)**: 150 storage units (queries/connections/models), up to 3 projects/members; desktop clients offer **14-day fully functional trial** | Cloud sync and collaboration add-on for Navicat desktop clients to synchronize queries, models, and connections. |
+| **[Beekeeper Studio (Paid)](https://www.beekeeperstudio.io/)** | **Bootstrapped Indie** (>2.5M downloads, <$1M revenue) | **$9/month** (Indie plan, billed annually) or **$14/month** (monthly) | **Free Forever (Community Edition)**: Unrestricted for individuals, non-profits, and businesses with <10 employees or <$1M revenue | Modern, intuitive cross-platform SQL editor with query tab management, chart visualizations, and schema explorer. |
 
 ## Open-Source GitHub Projects
 
