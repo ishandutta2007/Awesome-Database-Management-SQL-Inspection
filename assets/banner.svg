@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background linear gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glowing filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+    }
+    .pill-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    .code-font {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      fill: #38bdf8;
+    }
+
+    /* Ambient Pulsing & Flowing animations in the background */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.12); }
+    }
+    @keyframes floatOrb {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(-30px, 20px); }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes streamFlow {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .ambient-glow-cyan {
+      animation: pulseGlow 6s ease-in-out infinite alternate;
+      transform-origin: 200px 100px;
+    }
+    .ambient-glow-purple {
+      animation: floatOrb 8s ease-in-out infinite alternate;
+      transform-origin: 1000px 300px;
+    }
+    .flow-line {
+      stroke-dasharray: 8, 8;
+      animation: dashCycle 2.5s linear infinite;
+    }
+  </style>
+
+  <!-- Deep space background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+
+  <!-- Animated ambient glowing orbs (background layer) -->
+  <g opacity="0.4">
+    <circle class="ambient-glow-cyan" cx="180" cy="90" r="140" fill="#0284c7" filter="url(#glowCyan)" />
+    <circle class="ambient-glow-purple" cx="1020" cy="300" r="160" fill="#7c3aed" filter="url(#glowPurple)" />
+    <circle cx="600" cy="380" r="120" fill="#0d9488" opacity="0.2" filter="url(#glowCyan)" />
+  </g>
+
+  <!-- Architectural grid overlay -->
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- Dynamic Database Node Architecture Visual (Background / Side accent) -->
+  <g opacity="0.35" transform="translate(40, 20)">
+    <!-- Circuit lines connecting DB topologies -->
+    <path class="flow-line" d="M 120 70 L 260 70 L 320 120 L 520 120" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <path class="flow-line" d="M 1080 320 L 920 320 L 860 260 L 680 260" fill="none" stroke="#c084fc" stroke-width="1.5" />
+    
+    <!-- Stylized Database Cylinder Icons (decorative) -->
+    <g transform="translate(80, 50)" stroke="#38bdf8" stroke-width="1.5" fill="#1e293b" opacity="0.7">
+      <ellipse cx="20" cy="10" rx="18" ry="6"/>
+      <path d="M 2 10 v 18 c 0 3.3 8 6 18 6 s 18 -2.7 18 -6 v -18" />
+      <path d="M 2 19 c 0 3.3 8 6 18 6 s 18 -2.7 18 -6" />
+    </g>
+    <g transform="translate(1040, 290)" stroke="#c084fc" stroke-width="1.5" fill="#1e293b" opacity="0.7">
+      <ellipse cx="20" cy="10" rx="18" ry="6"/>
+      <path d="M 2 10 v 18 c 0 3.3 8 6 18 6 s 18 -2.7 18 -6 v -18" />
+      <path d="M 2 19 c 0 3.3 8 6 18 6 s 18 -2.7 18 -6" />
+    </g>
+  </g>
+
+  <!-- Foreground Content: Unobscured, high contrast, clean typography -->
+  <g id="foreground-content">
+    <!-- Top Status Badge -->
+    <g transform="translate(440, 48)">
+      <rect width="320" height="32" rx="16" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="20" cy="16" r="4" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text class="code-font" x="34" y="21">CURATED DATABASE ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(600, 140)">
+      <text class="title-text" text-anchor="middle" fill="url(#primaryGrad)">Database Management &amp; SQL Inspection</text>
+    </g>
+
+    <!-- Subtitle -->
+    <g transform="translate(600, 185)">
+      <text class="subtitle-text" text-anchor="middle">
+        Curated SaaS Platforms, Self-Hosted Clients &amp; Open-Source SQL IDEs
+      </text>
+    </g>
+
+    <!-- Feature Tag Pills -->
+    <g transform="translate(210, 245)">
+      <!-- Pill 1: Universal Clients -->
+      <g transform="translate(0, 0)">
+        <rect width="170" height="38" rx="10" fill="url(#pillGrad)" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.2" />
+        <text class="pill-label" x="85" y="24" text-anchor="middle">🗄️ Universal Clients</text>
+      </g>
+      <!-- Pill 2: SQL Inspection -->
+      <g transform="translate(190, 0)">
+        <rect width="170" height="38" rx="10" fill="url(#pillGrad)" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1.2" />
+        <text class="pill-label" x="85" y="24" text-anchor="middle">🔍 SQL Inspection</text>
+      </g>
+      <!-- Pill 3: Self-Hosted -->
+      <g transform="translate(380, 0)">
+        <rect width="180" height="38" rx="10" fill="url(#pillGrad)" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1.2" />
+        <text class="pill-label" x="90" y="24" text-anchor="middle">🚀 Self-Hosted Web</text>
+      </g>
+      <!-- Pill 4: Cloud & Serverless -->
+      <g transform="translate(580, 0)">
+        <rect width="190" height="38" rx="10" fill="url(#pillGrad)" stroke="#ec4899" stroke-opacity="0.4" stroke-width="1.2" />
+        <text class="pill-label" x="95" y="24" text-anchor="middle">⚡ Serverless &amp; SaaS</text>
+      </g>
+    </g>
+
+    <!-- Code / CLI Prompt Accent -->
+    <g transform="translate(420, 325)">
+      <rect width="360" height="32" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <text class="code-font" x="180" y="21" text-anchor="middle" fill="#64748b">
+        <tspan fill="#38bdf8">SELECT</tspan> * <tspan fill="#38bdf8">FROM</tspan> awesome_db_tools <tspan fill="#c084fc">ORDER BY</tspan> stars <tspan fill="#38bdf8">DESC</tspan>;
+      </text>
+    </g>
+  </g>
+</svg>
