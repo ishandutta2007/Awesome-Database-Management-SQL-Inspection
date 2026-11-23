@@ -1,6 +1,6 @@
 # Awesome-Database-Management-SQL-Inspection
 
-# Top Database Management & SQL Inspection Ecosystem
+## Top Database Management & SQL Inspection Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on SQL Editing, Schema Browsing & Self-Hosted Database Clients*  
