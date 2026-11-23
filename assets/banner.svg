@@ -35,11 +35,11 @@
     </pattern>
   </defs>
 
-  <style>
+  <style><![CDATA[
     .title-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 800;
-      font-size: 46px;
+      font-size: 44px;
       letter-spacing: -0.5px;
     }
     .subtitle-text {
@@ -72,24 +72,20 @@
     @keyframes dashCycle {
       to { stroke-dashoffset: -40; }
     }
-    @keyframes streamFlow {
-      0% { stroke-dashoffset: 200; }
-      100% { stroke-dashoffset: 0; }
-    }
 
     .ambient-glow-cyan {
       animation: pulseGlow 6s ease-in-out infinite alternate;
-      transform-origin: 200px 100px;
+      transform-origin: 180px 90px;
     }
     .ambient-glow-purple {
       animation: floatOrb 8s ease-in-out infinite alternate;
-      transform-origin: 1000px 300px;
+      transform-origin: 1020px 300px;
     }
     .flow-line {
       stroke-dasharray: 8, 8;
       animation: dashCycle 2.5s linear infinite;
     }
-  </style>
+  ]]></style>
 
   <!-- Deep space background -->
   <rect width="1200" height="400" fill="url(#bgGrad)" />
@@ -151,22 +147,22 @@
       <!-- Pill 1: Universal Clients -->
       <g transform="translate(0, 0)">
         <rect width="170" height="38" rx="10" fill="url(#pillGrad)" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.2" />
-        <text class="pill-label" x="85" y="24" text-anchor="middle">🗄️ Universal Clients</text>
+        <text class="pill-label" x="85" y="24" text-anchor="middle">&#x1F5C4; Universal Clients</text>
       </g>
       <!-- Pill 2: SQL Inspection -->
       <g transform="translate(190, 0)">
         <rect width="170" height="38" rx="10" fill="url(#pillGrad)" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1.2" />
-        <text class="pill-label" x="85" y="24" text-anchor="middle">🔍 SQL Inspection</text>
+        <text class="pill-label" x="85" y="24" text-anchor="middle">&#x1F50D; SQL Inspection</text>
       </g>
       <!-- Pill 3: Self-Hosted -->
       <g transform="translate(380, 0)">
         <rect width="180" height="38" rx="10" fill="url(#pillGrad)" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1.2" />
-        <text class="pill-label" x="90" y="24" text-anchor="middle">🚀 Self-Hosted Web</text>
+        <text class="pill-label" x="90" y="24" text-anchor="middle">&#x1F680; Self-Hosted Web</text>
       </g>
       <!-- Pill 4: Cloud & Serverless -->
       <g transform="translate(580, 0)">
         <rect width="190" height="38" rx="10" fill="url(#pillGrad)" stroke="#ec4899" stroke-opacity="0.4" stroke-width="1.2" />
-        <text class="pill-label" x="95" y="24" text-anchor="middle">⚡ Serverless &amp; SaaS</text>
+        <text class="pill-label" x="95" y="24" text-anchor="middle">&#x26A1; Serverless &amp; SaaS</text>
       </g>
     </g>
 
