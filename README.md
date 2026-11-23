@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Database-Management-SQL-Inspection/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Management-SQL-Inspection?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Database-Management-SQL-Inspection/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Management-SQL-Inspection?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Database-Management-SQL-Inspection/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Database-Management-SQL-Inspection?style=social" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Database-Management-SQL-Inspection/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -64,7 +64,7 @@ A breakdown of top hosted database management consoles, serverless databases, an
 
 ## 💻 Open-Source Database Clients & SQL Tools
 
-Explore top self-hosted and desktop open-source database clients, sorted in **descending order of GitHub stars**. Each repository includes a star count badge linking directly to its GitHub stargazers page:
+Explore top self-hosted and desktop open-source database clients, sorted in **descending order of GitHub_Stars**. Each repository includes a Stars_Count badge linking directly to its GitHub stargazers page:
 
 1. **[DBeaver Community](https://github.com/dbeaver/dbeaver)** [![Stars](https://img.shields.io/github/stars/dbeaver/dbeaver?style=social&color=white)](https://github.com/dbeaver/dbeaver/stargazers)  
    **The universal desktop database manager and SQL client.** Written in Java under **Apache 2.0**, DBeaver connects to 100+ database drivers via JDBC (Postgres, MySQL, SQLite, Oracle, SQL Server, DB2, ClickHouse, Redis, and more). Includes ER diagrams, query execution plans, visual data editors, and pgAdmin configuration import.
